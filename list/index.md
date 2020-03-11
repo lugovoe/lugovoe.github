@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 归档
-permalink: /archive/
+title: Извещения
+permalink: /list/
 ---
 
 {% if site.posts.size == 0 %}
-  <h2>No post found</h2>
+  <h2>Записи не найдены</h2>
 {% endif %}
 
 <ul class="archive">

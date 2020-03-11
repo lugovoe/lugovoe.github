@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% if site.posts.size == 0 %}
-  <h2>No post found</h2>
+  <h2>Записи не найдены</h2>
 {% endif %}
 
 <div class="posts">
@@ -12,7 +12,7 @@ layout: default
     {% if post.pinned==true %}
       <article class="post pinned">
         <h1>
-            <span title="pinned"><i data-feather="anchor"></i></span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <span title="закреплено"><i data-feather="anchor"></i></span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h1>
 
         <div clsss="meta">
@@ -44,7 +44,7 @@ layout: default
           {{ post.excerpt | truncate: 200 }}
         </div>
 
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Подробнее</a>
       </article>
     {% endif %}
   {% endfor %}
@@ -81,7 +81,7 @@ layout: default
         {{ post.excerpt | truncate: 200 }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Подробнее</a>
     </article>
     {% endunless %}
   {% endfor %}
@@ -91,14 +91,14 @@ layout: default
   {% if paginator.previous_page %}
     <span class="prev">
       <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
-        ← 上一页
+        ← Предыдущая страница
       </a>
     </span>
   {% endif %}
   {% if paginator.next_page %}
     <span class="next">
       <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
-        下一页 →
+        Следущая страница →
       </a>
     </span>
   {% endif %}

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 标签
+title: Теги
 permalink: /tags/
 ---
 
 {% if site.posts.size == 0 %}
-  <h2>No post found</h2>
+  <h2>Записи не найдены</h2>
 {% endif %}
 
 <div class="tags">
